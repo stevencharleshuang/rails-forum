@@ -8,3 +8,10 @@
 <% end %>
 <br>
 <%= link_to("Go to Sample", { :action => 'sample' }) %>
+<br>
+<% if(params.has_key?(:id) && 
+			params.has_key?(:random)) %>
+	<%= "ID : #{params[:id]}" %>
+	<br>
+	<%= "RANDOM : #{params[:random]}" %>
+<% end %>

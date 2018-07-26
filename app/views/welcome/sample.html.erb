@@ -4,4 +4,7 @@
 <%= "Message from controller : 
 #{@controller_message}" %>
 
-<%= link_to("Go to Index", { :action => 'index' }) %>
+<%= link_to("Go to Index", 
+	{ :action => 'index', 
+		:id => 5, 
+		:random => "random-id" }) %>
